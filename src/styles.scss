@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+// Setup
+@import "./app/styles/setup/typography";
+@import "./app/styles/setup/veriables";
+@import "./app/styles/setup/mixins";
+
+/// Basics
+@import "./app/styles/basics/helpers";
+@import "./app/styles/basics/layout";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: PlusLight;
+}
+
+body {
+  margin: 0;
+}
+
+.fs12 {
+  font-size: rem(12px);
+}
