@@ -1,1 +1,10 @@
-<p>where works!</p>
+<section>
+  <h3>איפה ואיך נפגשים</h3>
+  <section class="where">
+    <div *ngFor="let i of where">
+      <h4>{{ i.day }}, {{ i.time }}</h4>
+      <p>{{ i.how }}</p>
+      <p>{{ i.address }} {{ i.location }}</p>
+    </div>
+  </section>
+</section>

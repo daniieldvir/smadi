@@ -9,9 +9,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    height: 490px;
+    border-radius: 5px;
     input {
       border-radius: 5px;
-      border: 1px solid black;
+      border: 1px solid rgb(105, 104, 104);
 
       width: 340px;
       height: 30px;
@@ -25,23 +29,28 @@ section {
       display: flex;
       align-items: center;
       .checkbox {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
+      }
+      label {
+        font-size: 12px;
       }
     }
 
-    p {
+    span {
       font-size: 12px;
       margin: 0 0 10px 0px;
-      //   position: relative;
-      //   left: 9%;
+      position: relative;
+      left: 120px;
     }
 
     div {
       button {
+        cursor: pointer;
         margin-top: 20px;
         border-radius: 5px;
-        border: 1px solid black;
+        border: 1px solid rgb(105, 104, 104);
+        background-color: white;
 
         width: 150px;
         height: 30px;

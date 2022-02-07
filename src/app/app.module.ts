@@ -15,6 +15,7 @@ import { SignupComponent } from './cmps/signup/signup.component';
 import { MyMethodComponent } from './cmps/my-method/my-method.component';
 import { WhereComponent } from './cmps/where/where.component';
 import { FooterComponent } from './cmps/footer/footer.component';
+import { MoreDetailsComponent } from './cmps/more-details/more-details.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FooterComponent } from './cmps/footer/footer.component';
     MyMethodComponent,
     WhereComponent,
     FooterComponent,
+    MoreDetailsComponent,
   ],
   imports: [
     BrowserModule,

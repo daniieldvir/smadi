@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MyBelieve } from 'src/app/models/myBelieve.model';
-import { believeService } from 'src/app/services/myBelieve.services';
+import { believeService } from 'src/app/services/myBelieve.service';
 
 @Component({
   selector: 'app-my-believe',

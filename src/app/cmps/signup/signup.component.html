@@ -1,6 +1,6 @@
 <section id="signup">
   <h1>הרשמה לדיאטה האחרונה שלך</h1>
-  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <form (ngSubmit)="onSubmit()" #f="ngForm">
     <label>שם פרטי</label>
     <input
       type="text"
@@ -10,18 +10,18 @@
       required
       #username="ngModel"
     />
-    <p *ngIf="!username.valid && username.touched">*אנא הכנס שם פרטי</p>
+    <span *ngIf="!username.valid && username.touched">*אנא הכנס ערך תקין</span>
 
     <label>שם משפחה</label>
     <input
       type="text"
-      id="lastname"
-      name="lastname"
+      id="lastName"
+      name="lastName"
       ngModel
       required
-      #lastname="ngModel"
+      #lastName="ngModel"
     />
-    <p *ngIf="!lastname.valid && lastname.touched">*אנא הכנס שם משפחה</p>
+    <span *ngIf="!lastName.valid && lastName.touched">*אנא הכנס ערך תקין</span>
 
     <label>מייל</label>
     <input
@@ -33,7 +33,7 @@
       email
       #email="ngModel"
     />
-    <p *ngIf="!email.valid && email.touched">*אנא הכנס כתובת מייל תקינה</p>
+    <span *ngIf="!email.valid && email.touched">*אנא הכנס ערך תקין</span>
 
     <label>טלפון</label>
     <input type="text" id="phone" name="phone" ngModel />
@@ -52,6 +52,7 @@
       />
       <label>אני מאשר/ת קבלת דיוור במייל ו/או SMS </label>
     </div>
+
     <div>
       <button [disabled]="!f.valid" type="submit">גם אני רוצה להצליח</button>
     </div>
