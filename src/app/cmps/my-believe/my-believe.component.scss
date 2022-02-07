@@ -4,23 +4,44 @@ section {
     color: rgb(30, 143, 180);
     font-family: PlusMedium;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  h4 {
+    padding: 0;
+    margin: 0;
   }
 
   .believes {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    justify-content: space-around;
-
     margin: 5px;
+    flex-direction: column;
 
-    img {
-      width: 50px;
+    .believe {
+      margin-top: 5px;
+      img {
+        width: 50px;
+      }
+
+      p {
+        width: 250px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  section {
+    h3 {
+      font-size: 30px;
     }
 
-    p {
-      width: 250px;
+    .believes {
+      justify-content: space-around;
+      flex-direction: row;
     }
   }
 }

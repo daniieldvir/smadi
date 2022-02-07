@@ -1,5 +1,5 @@
 {
-  "name": "my-first-project",
+  "name": "my-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,9 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
-    "rxjs": "~7.4.0",
+    "add": "^2.0.6",
+    "axios": "^0.24.0",
+    "rxjs": "^7.5.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

@@ -10,5 +10,24 @@
   h3 {
     color: rgb(30, 143, 180);
     font-family: PlusMedium;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: rgb(30, 143, 180);
+    font-family: PlusMedium;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .mymethod1,
+  .mymethod2 {
+    h3 {
+      font-size: 30px;
+    }
   }
 }

@@ -18,6 +18,13 @@ export class SignupComponent implements OnInit {
     address: '',
     checkbox: '',
   };
+
+  // username!: string;
+  // lastName!: string;
+  // email!: string;
+  // phone!: string;
+  // address!: string;
+  // checkbox!: string;
   submitted = false;
 
   constructor() {}
@@ -25,7 +32,6 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    console.log(this.signupForm);
     this.submitted = true;
 
     this.user.username = this.signupForm.value.username;

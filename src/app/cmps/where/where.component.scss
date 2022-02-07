@@ -4,15 +4,12 @@ section {
     color: rgb(30, 143, 180);
     font-family: PlusMedium;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .where {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    text-align: center;
+    flex-direction: column;
 
     h4 {
       color: rgb(30, 143, 180);
@@ -24,6 +21,26 @@ section {
     p {
       padding: 0;
       margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  section {
+    margin-top: 40px;
+    h3 {
+      color: rgb(30, 143, 180);
+      font-family: PlusMedium;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .where {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+
+      text-align: center;
     }
   }
 }
