@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,9 @@ import { MyBelieveComponent } from './cmps/my-believe/my-believe.component';
 import { AboutComponent } from './cmps/about/about.component';
 import { TestimonialsComponent } from './cmps/testimonials/testimonials.component';
 import { SignupComponent } from './cmps/signup/signup.component';
-import { MymethodComponent } from './cmps/mymethod/mymethod.component';
+import { MyMethodComponent } from './cmps/my-method/my-method.component';
+import { WhereComponent } from './cmps/where/where.component';
+import { FooterComponent } from './cmps/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,17 @@ import { MymethodComponent } from './cmps/mymethod/mymethod.component';
     AboutComponent,
     TestimonialsComponent,
     SignupComponent,
-    MymethodComponent,
+    MyMethodComponent,
+    WhereComponent,
+    FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, YouTubePlayerModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    YouTubePlayerModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

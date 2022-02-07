@@ -1,1 +1,10 @@
-<p>my-believe works!</p>
+<section id="believes">
+  <h3>ומה "האני מאמין" שלי?</h3>
+  <section class="believes">
+    <div *ngFor="let believe of myBelieves">
+      <img src="{{ believe.img }}" />
+      <h4>{{ believe.headline }}</h4>
+      <p>{{ believe.believe }}</p>
+    </div>
+  </section>
+</section>
