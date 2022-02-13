@@ -15,7 +15,6 @@ export class WhereComponent implements OnInit {
   ngOnInit(): void {
     this.whereService.loadWhere().subscribe((where) => {
       this.where = where;
-      console.log(where);
     });
   }
 }

@@ -15,7 +15,6 @@ export class MyBelieveComponent implements OnInit {
   ngOnInit(): void {
     this.believeService.loadBelieves().subscribe((myBelieve) => {
       this.myBelieves = myBelieve;
-      console.log(myBelieve);
     });
   }
 }

@@ -7,11 +7,13 @@
         {{ testimonial.from }}, ירדה
         <span>{{ testimonial.weightLost }}</span> ק״ג
       </p>
-      <youtube-player
-        videoId="{{ testimonial.video }}"
-        [width]="300"
-        [height]="200"
-      ></youtube-player>
+      <div>
+        <youtube-player
+          videoId="{{ testimonial.video }}"
+          [width]="300"
+          [height]="200"
+        ></youtube-player>
+      </div>
     </div>
   </section>
 </section>

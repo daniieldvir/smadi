@@ -19,12 +19,6 @@ export class SignupComponent implements OnInit {
     checkbox: '',
   };
 
-  // username!: string;
-  // lastName!: string;
-  // email!: string;
-  // phone!: string;
-  // address!: string;
-  // checkbox!: string;
   submitted = false;
 
   constructor() {}
