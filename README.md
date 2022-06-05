@@ -2,7 +2,9 @@
 
 
 <p>This project was generated with Angular CLI version 13.1.2.</p>
-<p>This is a website i did for my dietitian :) </p> 
+<p>What would you be willing to do to lose weight once and for all?
+In this app you can sign up for healthy eating groups.
+groups in the zoom or frontal depending on the hours and days that are relevant to you.</p>
 
 <p> Link to the project: https://daniieldvir.github.io/smadi/ </p>
 
